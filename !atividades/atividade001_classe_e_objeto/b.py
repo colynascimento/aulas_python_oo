@@ -42,7 +42,12 @@ while True:
     idade = Idade(data_nascimento)
     
     if idade.validar_data():
-        print(f'{idade.calcular()}')
+        print(f'Sua idade é {idade.calcular()}.')
+        break
     else:
         os.system('cls')
-        print('Digite uma data no formato DD/MM/YYYY para validar!\n')
+        print('Entrada inválida! Digite uma data no formato DD/MM/YYYY\n')
+        
+print('_' * 70)
+print('\nFim do programa')
+print()
