@@ -19,8 +19,8 @@ class Operacoes:
     def soma(self):
         return self.valor_1 + self.valor_2 + self.valor_3
     
-    def multiplicacao(self, valor_1, valor_2, valor_3):
-        return valor_1 * valor_2 * valor_3
+    def multiplicacao(self):
+        return self.valor_1 * self.valor_2 * self.valor_3
     
 os.system('cls')
 
