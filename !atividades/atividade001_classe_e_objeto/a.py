@@ -10,6 +10,7 @@
 import os
 import time
 
+
 class Operacoes:
     def __init__(self, valor_1, valor_2, valor_3):
         self.valor_1 = valor_1
@@ -50,7 +51,7 @@ while True:
         print(f'O resultado da operação é {resultado.soma()}')
         break
     elif opcao == '2':
-        print(f'Multiplicando {valor_1} + {valor_2} + {valor_3}...')
+        print(f'Multiplicando {valor_1} × {valor_2} × {valor_3}...')
         time.sleep(1)
         print(f'O resultado da operação é {resultado.multiplicacao()}')
         break
