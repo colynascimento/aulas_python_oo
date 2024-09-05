@@ -46,7 +46,7 @@ while True:
         break
     else:
         os.system('cls')
-        print('Entrada inválida! Digite uma data no formato DD/MM/YYYY\n')
+        print('Entrada inválida! Digite uma data no formato DD/MM/YYYY')
         
 print('_' * 70)
 print('\nFim do programa')

@@ -21,7 +21,10 @@ class Retangulo:
     
 os.system('cls')
 
-comprimento_retangulo = input('Digite o comprimento do retângulo: ')
-altura_retangulo = input('Digite a altura do retângulo: ')
+comprimento_retangulo = int(input('Digite o comprimento do retângulo: '))
+altura_retangulo = int(input('Digite a altura do retângulo: '))
 
 retangulo = Retangulo(comprimento_retangulo, altura_retangulo)
+perimetro = retangulo.calcular_perimetro()
+
+print(f'O perímetro do retângulo é: {perimetro}')
