@@ -77,7 +77,9 @@ while True:
             break
         else:
             os.system('cls')
-            print('Digite uma opção válida!\n')
+            print('Digite uma opção válida!')
+            print('_' * 60)
+            print()
     break
 
 print('_' * 70)
