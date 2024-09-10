@@ -10,3 +10,43 @@
 # nesse intervalo, assim como a soma dos mesmos.
 
 import os
+
+
+class Contador:
+    def __init__(self, valor_inicial, valor_final):
+        self.valor_inicial = valor_inicial
+        self.valor_final = valor_final
+
+    def contar_impares(self, valor_inicial, valor_final):
+        pass
+
+    def somar_impares(self, valor_inicial, valor_final):
+        pass
+
+class Impares(Contador):
+    def __init__(self, valor_inicial, valor_final):
+        self.valor_inicial = valor_inicial
+        self.valor_final = valor_final
+
+    def contar_impares(self):
+        contador = 0
+
+        for numero in range(self.valor_inicial, self.valor_final + 1):
+            if numero % 2 == 1:
+                contador += 1
+
+        return contador
+
+    def somar_impares(self):
+        soma = 0
+
+        for numero in range(self.valor_inicial, self.valor_final):
+            if numero % 2 == 1:
+                soma += numero
+
+        return soma
+
+os.system('cls')
+
+valor_inicial = int(input('Digite o número inicial do intervalo: '))
+valor_final = int(input('Digite o número final do intervalo: '))

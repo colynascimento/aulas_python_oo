@@ -11,3 +11,38 @@
 # caractere “f" seja digitado.
 
 import os
+
+
+class Looping:
+    def __init__(self, entrada):
+        self.entrada = entrada
+
+    def parar_loop(self, entrada):
+        pass
+
+class PararLoop(Looping):
+    def __init__(self, entrada):
+        self.entrada = entrada
+
+    def parar_loop(self):
+        loop = True
+
+        while loop == True:
+            if self.entrada == 'f':
+                break
+            else:
+                print('Estou em looping!')
+
+            self.entrada = input('Digite uma letra: ').lower()
+
+os.system('cls')
+
+entrada_usuario = input('Digite uma letra: ').lower()
+
+looping = PararLoop(entrada_usuario)
+
+looping.parar_loop()
+
+print('-' * 50)
+print('Fim do programa!')
+print()
