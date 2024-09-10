@@ -10,3 +10,21 @@
 import os
 
 
+class Contador:
+    def __init__(self, valor_inicial, valor_limite):
+        self.valor_inicial = valor_inicial
+        self.valor_limite = valor_limite
+ 
+    def printar(self, valor_inicial, valor_limite):
+        pass
+    
+class PrintarNumero(Contador):        
+    def printar(self):
+        for i in range(self.valor_inicial, self.valor_limite, -1):
+            print(f'{i}', end=' ')
+
+os.system('cls')
+
+contador = PrintarNumero(10, 0)
+
+contador.printar()

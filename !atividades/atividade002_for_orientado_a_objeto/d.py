@@ -8,3 +8,11 @@
 # e 100.
 
 import os
+
+
+class Contador:
+    def __init__(self, valor_inicial, valor_limite):
+        self.valor_inicial = valor_inicial
+        self.valor_limite = valor_limite
+        
+    
