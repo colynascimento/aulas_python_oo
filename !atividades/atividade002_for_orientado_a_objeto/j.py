@@ -50,3 +50,8 @@ os.system('cls')
 
 valor_inicial = int(input('Digite o número inicial do intervalo: '))
 valor_final = int(input('Digite o número final do intervalo: '))
+
+contador_impares = Impares(valor_inicial, valor_final)
+
+print('O intervalo tem:', contador_impares.contar_impares(), 'números ímpares')
+print('A soma dos ímpares é:', contador_impares.somar_impares())

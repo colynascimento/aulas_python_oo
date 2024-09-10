@@ -9,3 +9,10 @@
 # palíndromo ou não, exibindo em tela esse resultado.
 
 import os
+
+class VerificadorString:
+    def __init__(self, entrada):
+        self.entrada = entrada
+
+    def vericar_palindromo(self, entrada):
+        pass
