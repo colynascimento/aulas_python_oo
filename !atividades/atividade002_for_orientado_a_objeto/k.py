@@ -10,9 +10,33 @@
 
 import os
 
+
 class VerificadorString:
     def __init__(self, entrada):
         self.entrada = entrada
 
     def vericar_palindromo(self, entrada):
         pass
+    
+class Palindromo(VerificadorString):
+    def __init__(self, entrada):
+        self.entrada = entrada
+        
+    def vericar_palindromo(self):
+        self.entrada = entrada.replace(' ', '').lower()
+        
+        if self.entrada[::-1] == self.entrada:
+            return True
+        else:
+            return False
+        
+os.system('cls')
+
+entrada = input('Digite uma frase: ')
+
+verificar_string = Palindromo(entrada)
+
+if verificar_string.vericar_palindromo():
+    print(f'{entrada} é um palíndromo!')
+else:
+    print(f'{entrada} não é um palíndromo')

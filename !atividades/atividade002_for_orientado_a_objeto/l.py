@@ -10,3 +10,26 @@
 # sair do laço.
 
 import os
+
+dados_login = {'ColyChan': 'bolo_de_morango', 'RelampagoMarquinhos': '321katchau'}
+
+class BancoDeDados:
+    def __init__(self, usuario, senha):
+        self.usuario = usuario
+        self.senha = senha
+        
+    def verificar_usuario(self, usuario, senha):
+        pass
+            
+    def verificar_senha(self, usuario, senha):
+        pass
+    
+class Login(BancoDeDados):
+    def __init__(self, usuario, senha):
+        self.usuario = usuario
+        self.senha = senha
+        
+    def verificar_usuario(self):
+        verificar_usuario = bool()
+
+    
