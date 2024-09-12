@@ -11,7 +11,7 @@
 
 import os
 
-dados_login = {'ColyChan': 'bolo_de_morango', 'RelampagoMarquinhos': '321katchau'}
+dados_login = {'ColyChan': 'bolo_de_morango', 'RelampagoMarquinhos': 'k@tch@u', 'lilo':'stich626'}
 
 class BancoDeDados:
     def __init__(self, usuario, senha):
@@ -30,6 +30,30 @@ class Login(BancoDeDados):
         self.senha = senha
         
     def verificar_usuario(self):
-        verificar_usuario = bool()
-
+        verificar_usuario = False
     
+        if self.usuario in dados_login.keys():
+            verificar_usuario = True
+        
+        return verificar_usuario
+    
+    def verificar_senha(self):
+        verificar_usuario = False
+    
+        if self.usuario in dados_login:
+            if dados_login[self.usuario] == self.senha:
+                verificar_usuario = True
+        
+        return verificar_usuario
+    
+os.system('cls')
+
+usuario = input('Usuário: ')
+senha = input('Senha: ')
+
+login = Login(usuario, senha)
+
+if login.verificar_usuario() and login.verificar_senha():
+    print('Login efetuado com sucesso!')
+else:
+    print('Erro: Usuário/Senha incorretos.')
